@@ -48,7 +48,7 @@ span {
     border-radius: 5px;
     padding: 12px;
     font-size: 1rem;
-    animation: fadeIn 2s ease-in-out forwards; /* Animação de fade-in */
+    animation: fadeIn 0.2s ease-in-out forwards; /* Animação de fade-in */
 }
 
 .friend-name {
@@ -59,9 +59,9 @@ span {
 }
 
 .highlight {
-    color: red; /* Cor vermelha para a palavra "Parabéns" */
+    color: black; /* Cor inicial preta */
     font-weight: bolder;
-    animation: fadeIn 4s ease-in-out; /* Animação de fade-in */
+    animation: fadeIn 2s ease-in, 2s ease-in-out, colorChange 2s ease-in-out forwards; /* Animação de fade-in, transformação de texto e mudança de cor */
     display: inline;
 }
 
@@ -71,6 +71,16 @@ span {
     }
     to {
         opacity: 1;
+    }
+}
+
+
+@keyframes colorChange {
+    0% {
+        color: black;
+    }
+    100% {
+        color: red;
     }
 }
 
