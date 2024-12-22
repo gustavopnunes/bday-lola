@@ -1,0 +1,105 @@
+body {
+    font-family: 'Calibri', sans-serif; /* Fonte padrão Colibri sem serifa */
+    text-align: center;
+    background-color: #b3cde0; /* Tom azul claro pastel */
+    margin: 0;
+    padding: 0;
+    color: rgb(65, 65, 65);
+    -webkit-font-smoothing: antialiased; /* Suavização de fontes */
+    -moz-osx-font-smoothing: grayscale; /* Suavização de fontes */
+}
+
+span {
+    display: block;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 0 20px;
+    position: relative;
+    min-height: 100vh; /* Garantir que o container ocupe a altura total da viewport */
+    box-sizing: border-box;
+}
+
+.photo-section {
+    margin-bottom: 10px;
+}
+
+.photo {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.message {
+    font-size: 2rem;
+    margin: 20px 0;
+    display: block;
+    height: 30vh;
+}
+
+.sub-message {
+    font-size: .9rem;
+}
+
+.testimony {
+    background-color: rgba(255, 255, 255, 0.727);
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    animation: fadeIn 2s ease-in-out forwards; /* Animação de fade-in */
+}
+
+.friend-name {
+    font-style: italic;
+    color: rgb(80, 80, 80);
+    font-size: 1rem;
+    padding-top: 8px;
+}
+
+.highlight {
+    color: red; /* Cor vermelha para a palavra "Parabéns" */
+    font-weight: bolder;
+    animation: fadeIn 4s ease-in-out; /* Animação de fade-in */
+    display: inline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0091ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: fixed; /* Fixar o botão no rodapé */
+    bottom: 20px; /* Distância do rodapé */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease; /* Transição suave de cores */
+}
+
+button:hover {
+    background-color: #69a7d6;
+}
+
+@media (max-width: 600px) {
+    .message {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
