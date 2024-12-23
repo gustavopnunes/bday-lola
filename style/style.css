@@ -50,7 +50,7 @@ span {
     border-radius: 5px;
     padding: 12px;
     font-size: 1rem;
-    animation: fadeIn 0.2s ease-in-out forwards; /* Animação de fade-in */
+    animation: fadeIn 0.1s ease-in-out forwards; /* Animação de fade-in */
 }
 
 .friend-name {
@@ -73,15 +73,6 @@ span {
     }
     to {
         opacity: 1;
-    }
-}
-
-@keyframes textTransform {
-    0% {
-        text-transform: lowercase;
-    }
-    100% {
-        text-transform: uppercase;
     }
 }
 
@@ -132,7 +123,7 @@ button:hover {
 
 .carousel img.enlarged {
     width: auto;
-    max-width: 248px;
+    max-width: 60vw;
     max-height: 248px;
     height: auto;
     z-index: 1000;
