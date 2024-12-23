@@ -1,12 +1,12 @@
 body {
-    font-family: 'Calibri', sans-serif; /* Fonte padrão Colibri sem serifa */
+    font-family: 'Calibri', sans-serif;
     text-align: center;
-    background-color: #b3cde0; /* Tom azul claro pastel */
+    background-color: #b3cde0; 
     margin: 0;
     padding: 0;
     color: rgb(65, 65, 65);
-    -webkit-font-smoothing: antialiased; /* Suavização de fontes */
-    -moz-osx-font-smoothing: grayscale; /* Suavização de fontes */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
 }
 
 span {
@@ -17,7 +17,7 @@ span {
     margin-top: 50px;
     padding: 0 20px;
     position: relative;
-    min-height: 100vh; /* Garantir que o container ocupe a altura total da viewport */
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
@@ -34,10 +34,10 @@ span {
 
 .message {
     font-size: 2rem;
-    margin: 20px auto; /* Centralizar horizontalmente */
+    margin: 0 auto; 
     display: block;
     height: 12vh;
-    max-width: 480px; /* Largura máxima */
+    max-width: 460px;
 }
 
 .sub-message {
@@ -45,12 +45,24 @@ span {
 }
 
 .testimony {
-    background-color: rgba(255, 255, 255, 0.727);
-    border: 1px solid rgb(94, 94, 94);
+    background-color: rgba(239, 239, 239, 0.727);
+    border: 2px solid rgb(94, 94, 94);
     border-radius: 5px;
-    padding: 12px;
+    padding: 8px;
     font-size: 1rem;
-    animation: fadeIn 0.1s ease-in-out forwards; /* Animação de fade-in */
+    animation: fadeIn 0.1s ease-in-out forwards; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimony img {
+    margin-bottom: 8px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.603); 
 }
 
 .friend-name {
@@ -58,12 +70,13 @@ span {
     color: rgb(80, 80, 80);
     font-size: 1rem;
     padding-top: 8px;
+    text-decoration: underline;
 }
 
 .highlight {
-    color: black; /* Cor inicial preta */
+    color: black; 
     font-weight: bolder;
-    animation: fadeIn 2s ease-in, textTransform 2s ease-in-out, colorChange 2s ease-in-out forwards; /* Animação de fade-in, transformação de texto e mudança de cor */
+    animation: fadeIn 2s ease-in, textTransform 2s ease-in-out, colorChange 2s ease-in-out forwards; 
     display: inline;
 }
 
@@ -93,11 +106,11 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    position: fixed; /* Fixar o botão no rodapé */
-    bottom: 20px; /* Distância do rodapé */
+    position: fixed; 
+    bottom: 20px; 
     left: 50%;
     transform: translateX(-50%);
-    transition: background-color 0.3s ease; /* Transição suave de cores */
+    transition: background-color 0.3s ease; 
 }
 
 button:hover {
@@ -105,10 +118,10 @@ button:hover {
 }
 
 .carousel {
-    display: none; /* Inicialmente oculto */
+    display: none; 
     margin-top: 20px;
-    overflow-x: auto; /* Adicionar rolagem horizontal */
-    white-space: nowrap; /* Impedir quebra de linha */
+    overflow-x: auto; 
+    white-space: nowrap;
 }
 
 .carousel img {
@@ -116,9 +129,9 @@ button:hover {
     max-height: 240px;
     margin: 0 5px;
     border-radius: 10px;
-    cursor: pointer; /* Cursor de ponteiro para indicar que a imagem é clicável */
-    transition: transform 0.3s ease; /* Transição suave para a transformação */
-    display: inline-block; /* Manter as imagens em linha */
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+    display: inline-block; 
 }
 
 .carousel img.enlarged {
@@ -130,11 +143,11 @@ button:hover {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.5); /* Ampliar a imagem */
+    transform: translate(-50%, -50%) scale(1.5); 
 }
 
 #closeButton {
-    display: none; /* Inicialmente oculto */
+    display: none; 
     position: fixed;
     top: 10px;
     right: 10px;
