@@ -14,7 +14,7 @@ span {
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 5px;
     padding: 0 20px;
     position: relative;
     min-height: 100vh;
@@ -23,6 +23,7 @@ span {
 
 .photo-section {
     margin-bottom: 10px;
+    margin: 0 auto;
 }
 
 .photo {
@@ -46,11 +47,10 @@ span {
 
 .testimony {
     background-color: rgba(239, 239, 239, 0.727);
-    border: 2px solid rgb(94, 94, 94);
+    border: 2px solid rgba(94, 94, 94, 0.221);
     border-radius: 5px;
     padding: 8px;
-    font-size: 1rem;
-    animation: fadeIn 0.1s ease-in-out forwards; 
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +76,7 @@ span {
 .highlight {
     color: black; 
     font-weight: bolder;
-    animation: fadeIn 2s ease-in, textTransform 2s ease-in-out, colorChange 2s ease-in-out forwards; 
+    animation: fadeIn 1s ease-in, textTransform 2s ease-in-out, colorChange 2s ease-in-out forwards; 
     display: inline;
 }
 
@@ -119,8 +119,8 @@ button:hover {
 
 .carousel {
     display: none; 
-    margin-top: 20px;
-    overflow-x: auto; 
+    margin-top: 240px;
+    overflow-x: scroll; 
     white-space: nowrap;
 }
 
@@ -161,6 +161,30 @@ button:hover {
     border: none;
     border-radius: 5px;
     z-index: 1001;
+}
+
+.ayeska-testimonial-photo {
+    width: 80vw;
+    height: auto;
+    max-width: 460px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.last-message {
+    font-size: 1rem; /* Tamanho da fonte para a última mensagem */
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.happy-bday {
+    margin-top: 8px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: red;
 }
 
 @media (max-width: 600px) {
