@@ -1,0 +1,63 @@
+body {
+    font-family: 'Calibri', sans-serif;
+    text-align: center;
+    background-color: #ffadf8; 
+    margin: 0;
+    padding: 0;
+    color: rgb(65, 65, 65);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajustar altura para acomodar a mensagem */
+    flex-direction: column;
+}
+
+.hearts {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaço entre os corações e a imagem */
+}
+
+span.current-date {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px; /* Espaço entre o texto e a data */
+}
+
+.responsive-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10%; /* Tornar a imagem redonda */
+    max-width: 300px; /* Largura máxima */
+    position: relative;
+    z-index: 1;
+}
+
+.compliment {
+    font-size: 1.5rem;
+    margin-top: 10px; /* Reduzir espaço entre a imagem e o texto */
+    color: #333;
+}
+
+.note {
+    font-size: 1rem;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 10px; /* Espaço entre o elogio e a nota */
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .responsive-image {
+        width: 80%; /* Ajustar largura para dispositivos menores */
+    }
+}
